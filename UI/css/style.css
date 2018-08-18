@@ -16,7 +16,7 @@ body{
 /* Add style to the header section in body*/
 .topnav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top:10px
+    padding-top:10px;
     min-height:40px;
     border-bottom:#9B8A99 3px solid;
     background-color:#102B36;
