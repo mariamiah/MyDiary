@@ -5,33 +5,48 @@
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Maria Nanfuka">
     <link rel="stylesheet" href="css/style.css"/>
-    <title> Dear Diary | Welcome</title>
+    <script src = "js/script.js"></script> 
+    <title>Dear Diary | Profile</title>
 </head>
 <body>
     <div class="topnav">
-        <div class="profile">Welcome Maria!
+        <div class="profile"><a href ="dashboard.html">Welcome Maria!</a>
         </div>
         <div class="topnav-list">
          <ul>
-             <li> <a href="index.html">Home</a></li>
-             <li> <a href="about.html">About Us</a></li>
-             <li><a href="contact.html">Contact Us</a></li>
+             <li> <a href="dashboard.html">Home</a></li>
+             <li> <a href="about2.html">About Us</a></li>
+             <li><a href="contact2.html">Contact Us</a></li>
              <li><a href="index.html">Log out</a></li>
          </ul>
         </div>
          <div class="clear"></div>
      </div>
-
-<div class="dashboard-content">
+     <aside>
+     <div class="dashboard-content">
         <img src="img/20180207_110917.jpg">
-    <div class="options">
-    <ul>
-        <li> <a href="profile.html">My Profile</a></li>
-        <li> <a href="about.html">My Diary</a></li>
-        <li><a href="contact.html">Reminders</a></li>
-        <li><a href="index.html">Log out</a></li>
-    </ul> 
-    </div>
-</div>
+
+     <div class="tab">
+        <button class="tablinks" onclick="openOption(event, 'Profile')">Account</button>
+        <button class="tablinks" onclick="openOption(event, 'Diary')">Diary</button>
+        <button class="tablinks" onclick="openOption(event, 'Reminders')">Reminders</button>
+      </div>
+    </aside>
+   
+      <div id="Profile" class="tabcontent">
+        <h3>Account</h3>
+        <p>Edit your Account Details.</p>
+      </div> 
+      <div id="Diary" class="tabcontent">
+        <h3>View diary entries</h3>
+
+      </div>
+      
+      <div id="Reminders" class="tabcontent">
+        <h3>Reminders</h3>
+      </div>
+
+    
+
 </body>
 </html>
