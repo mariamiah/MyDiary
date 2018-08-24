@@ -17,7 +17,7 @@ body{
 .topnav{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-top:10px;
-    min-height:40px;
+    min-height:20px;    
     border-bottom:#9B8A99 3px solid;
     background-color:#102B36;
     overflow:hidden;
@@ -31,15 +31,15 @@ body{
     margin-left: 200px;
     margin-top: 7px;
     margin-bottom: 1px;
+    float:right;
   }
 
   .topnav-list li {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:12px;
-    height: 20px;
-    border-bottom: 1px solid #888;
-    display: inline-block;
-    margin-right: -4px;
+    font-size:18px;
+    height: 10px;
+    display: inline-flex;
+    margin-right: -8px;
     padding: 10px 25px;
   }
   
@@ -51,7 +51,7 @@ body{
   }
    /* Change the color of links on hover */
 .topnav-list a:hover {
-    background-color:#AFEEEE;
+    
     color: red;
 }
 
@@ -61,7 +61,7 @@ body{
   cursor: default;
 }
 .topnav-list{
-    float: right;;
+    float: right;
   }
 .index-content{
     display: flex;
@@ -80,7 +80,13 @@ body{
     background-color: #102B36;
 }
 .signup-login>center {
-    color: red!important;
+    color:white;
+}
+.signup-login>center a{
+    color:red;
+}
+form center a{
+    color:red;
 }
 .login{
      width: 30%;
@@ -112,8 +118,8 @@ body{
 }
 
 h3,h2{
-    color: green;
-    float: right;
+    color:white;
+    
 }
 h4{
     color: rgb(236, 228, 228);
@@ -126,7 +132,9 @@ form{
 }
 
 #logo{
-    height: 60px;
+    height: 90px;
+    width:250px;
+    padding-top: 10px;
 }
 
 .signup-login input[type=text],input[type=email],input[type=password]{
@@ -161,64 +169,104 @@ label{
 }
 .profile{
     display: inline-block;
-    padding: 25px 25px;
+    padding:0px 25px;
     font-size: 25px;
 }
 .dashboard-content{
-    width: 15%;
-    height: 100%;
+    width: 10%;
     border: solid thin rgb(97, 90, 90);
     background-color: #102B36;
-    
-} 
-.options a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    transition: .3s background-color;
-  }
-    /* Change the color of links on hover */
-.options a:hover {
-        color: red;
-}
- /*Add style to the unordered list items in the side navigation panel */
- .options ul {
-    list-style: none;   
-     }
+   padding:100px 10px;
+   height:500px;
 
-  .options li {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:16px;
-    height: 20px;
     
-    display: inline-block;
-    margin-right: -4px;
-    
-  }
+}
+
   .dashboard-content img{
-    height:65px;
-    width:75px;
-    padding: 5%;
-    margin-left: 15%
-
+    height:85px;
+    width:95px;
+    padding: -25%;
+    margin-left: 20%;
+    margin-top:-50%;
+    
 }
 
- 
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (min-width: 600px) {
-    .topnav li {
-      width: 120px;
-      border-bottom: none;
-      height: 50px;
-      line-height: 50px;
-      font-size: 1.4em;
-    }
-    .options{
-        width: 120px;
-        border-bottom: none;
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.4em;  
-    }
-  }
+.about1{
+    float:center;
+    background-color: #102B36;
+    margin-left: 26%;
+    margin-top: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    width:50%;
+}
+.content h4{
+    color:white;
+}
+.profile a{
+    text-decoration:none;
+    color:white;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    width: 100%;
+    
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 100%
+    
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: red;
+    
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: grey;
+    
+}
+
+/* Style the tab content */
+.tabcontent {
+    float:left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 700px;
+    display: none;
+    background:#102B36;
+    margin-left:11.8%;
+    margin-top: -53.5%;
+}
+#Profile h3{
+    margin-left: 40%;
+}
+#Profile p{
+    margin-left:35%;
+}
+#Diary h3{
+    margin-left:40%;
+}
+#Reminders h3{
+    margin-left:40%;
+}
+
 
