@@ -18,3 +18,9 @@ function openOption(evt, optionName) {
     document.getElementById(optionName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+    
+
