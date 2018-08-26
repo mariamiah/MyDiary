@@ -503,3 +503,56 @@ label{
     padding: 60px 20px 15px 40px;
    
 }
+/* Add style to the reminders table*/
+#all-reminders{
+    width:80%;
+    height:50%;
+    background-color:white;
+    color:black;
+    padding:30px 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: -2%;
+}
+/* Style the make-reminder button*/
+#make-reminder input{
+    margin-top:45%;
+   margin-left:-11.5%;
+    width:150px;
+}
+/* Style the different buttons within the reminders table*/
+#readmore{
+    color:darkgreen;
+}
+#snooze{
+    color:blue;
+}
+#delete{
+    color:red;
+}
+/* Style the reminders form*/
+#remindersform{
+    margin-left: 27%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:30%;
+    padding:60px 50px 70px 100px;
+}
+#remindersform input[type=text], input[type=date]{
+    width: 72%;
+    height: auto;
+    padding: 10px 10px;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    color: green;
+}
+#remindersform input[type=submit]{
+    width:40%;
+}
+.Modalthree{
+    display: none; /* Hidden by default */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 60px;
+    transform: translate(-105%, -151%);
+    position: relative; 
+}
