@@ -213,6 +213,9 @@ label{
 .tab {
     float: left;
     width: 100%;
+    min-height:7em;
+    position:relative;
+    z-index: 0;
     
 }
 
@@ -228,7 +231,7 @@ label{
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 100%
+    font-size: 100%;
     
 }
 
@@ -548,6 +551,7 @@ label{
 }
 #remindersform input[type=submit]{
     width:40%;
+    
 }
 .Modalthree{
     display: none; /* Hidden by default */
@@ -556,3 +560,10 @@ label{
     transform: translate(-105%, -151%);
     position: relative; 
 }
+#formtwo{
+   padding:0px 0px;
+   width:76%;
+   height:106%;
+   text-align: left;
+}
+
