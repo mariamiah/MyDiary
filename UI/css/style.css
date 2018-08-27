@@ -563,7 +563,7 @@ label{
     margin-top:-30%;
     padding-top: 160px;
     transform: translate(0%, -125%);
-    position: relative;
+    position: inherit;
     
 }
 .Modalfour .close{
