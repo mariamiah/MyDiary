@@ -427,15 +427,7 @@ label{
     clear: both;
   }
   
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-     
-    }
-  }
+  
   
   /* Style the counter cards */
   .card {
@@ -580,3 +572,13 @@ label{
     margin-left:30%;
     margin-bottom:40%;
 }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+     
+    }
+  }
