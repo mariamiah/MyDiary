@@ -648,6 +648,9 @@ input[type=date] {
     margin-left: 30%;
     margin-bottom: 40%;
 }
+#enquiry{
+    margin-left:15%;
+}
 
 /*Add responsiveness for a mobile phone device*/
 @media only screen and (min-width: 280px) and (max-width: 480px) {
@@ -693,7 +696,7 @@ input[type=date] {
 
 /* Add responsiveness for larger devices */
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
-  
+
     .topnav-list {
         float: left;
     }
@@ -732,9 +735,10 @@ input[type=date] {
     }
 
 }
+
 /* Add responsiveness for tab devices */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  
+
     .topnav-list {
         float: left;
     }
