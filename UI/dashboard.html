@@ -1,442 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="author" content="Maria Nanfuka">
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src = "js/script.js"></script> 
-    <title>Dear Diary | Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Maria Nanfuka">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/script.js"></script>
+  <title>Dear Diary | Profile</title>
 </head>
+
 <body>
-    <div class="topnav">
-        <div class="profile"><a href ="dashboard.html">Welcome Maria!</a>
-        </div>
-        <div class="topnav-list">
-         <ul>
-             <li> <a href="dashboard.html">Home</a></li>
-             <li> <a href="about2.html">About Us</a></li>
-             <li><a href="contact2.html">Contact Us</a></li>
-             <li><a href="../index.html">Log out</a></li>
-         </ul>
-        </div>
-         <div class="clear"></div>
-        
-     </div>
+  <div class="topnav">
+    <div class="profile"><a href="dashboard.html">Welcome Maria!</a>
+    </div>
+    <div class="topnav-list">
+      <ul>
+        <li> <a href="dashboard.html">Home</a></li>
+        <li> <a href="about2.html">About Us</a></li>
+        <li><a href="contact2.html">Contact Us</a></li>
+        <li><a href="../index.html">Log out</a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
 
-     
-<aside>
-  <div class="dashboard-content">
-         <img src="img/20180207_110917.jpg">
+  </div>
 
-  <div class="tab">
-     <button class="tablinks" onclick="openOption(event, 'Profile')">Profile</button>
-     <button class="tablinks" onclick="openOption(event, 'Diary')">Diary</button>
-     <a href="#" class="notification"><button class="tablinks" onclick="openOption(event, 'Reminders')">
-     Reminders</button>
-     <span class="badge">4</span>
-       </a>
-     
-   </div>
- </aside>
-   <div id="Profile" class="tabcontent">
-     <h3>PROFILE</h3>
-     
-     <div class="profilecard">
-        <img src="img/20180207_110917.jpg" alt="Maria" style="width:100%">
-         <h3>Maria</h3>
-  <p class="title">UI designer</p>
-  <p>Kampala</p>
-  <p>Birthday: 19-August</p> 
-  <p><button>Edit profile details</button></p>
-</div>
-<div class="statuscard">
-   <p><strong>DIARY STATUS</strong></p>
-<p class="title"><b>Total Entries:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10</b></p>
-<p><b>Modified Entries:&nbsp;2</b></p>
-<p><b>Deleted Entries:&nbsp;&nbsp;&nbsp;1</b></p> 
-<p><b>Draft Entries:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</b></p>
-</div>
-     </div>
-   </div> 
-   <div id="Diary" class="tabcontent">
+
+  <aside>
+    <div class="dashboard-content">
+      <img src="img/20180207_110917.jpg">
+
+      <div class="tab">
+        <button class="tablinks" onclick="openOption(event, 'Profile')">Profile</button>
+        <button class="tablinks" onclick="openOption(event, 'Diary')">Diary</button>
+        <a href="#" class="notification"><button class="tablinks" onclick="openOption(event, 'Reminders')">
+            Reminders</button>
+          <span class="badge">4</span>
+        </a>
+
+      </div>
+  </aside>
+  <div id="Profile" class="tabcontent">
+    <h3>PROFILE</h3>
+
+    <div class="profilecard">
+      <img src="img/20180207_110917.jpg" alt="Maria" style="width:100%">
+      <h3>Maria</h3>
+      <p class="title">UI designer</p>
+      <p>Kampala</p>
+      <p>Birthday: 19-August</p>
+      <p><button>Edit profile details</button></p>
+    </div>
+    <div class="statuscard">
+      <p><strong>DIARY STATUS</strong></p>
+      <p class="title"><b>Total Entries:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10</b></p>
+      <p><b>Modified Entries:&nbsp;2</b></p>
+      <p><b>Deleted Entries:&nbsp;&nbsp;&nbsp;1</b></p>
+      <p><b>Draft Entries:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</b></p>
+    </div>
+  </div>
+  </div>
+  <div id="Diary" class="tabcontent">
     <a href="#" class="previous">&laquo; Previous</a>
-   <a href="#" class="next">Next &raquo;</a>
+    <a href="#" class="next">Next &raquo;</a>
     <input type="text" placeholder="Search..">
     <button type="submit"><i class="fa fa-search"></i></button>
     <!-- Button to open the modal diary entry form -->
     <div id="make-entry">
-        <input type="submit" onclick="document.getElementById('id01').style.display='block'" value="Add a Diary Entry"/>
+      <input type="submit" onclick="document.getElementById('id01').style.display='block'" value="Add a Diary Entry" />
     </div>
     <div>
-            <div class="row" id="entries">
-                    <div class="column">
-                      <div class="card">
-                        <h4>19-08-2018</h4>
-                        <p><strong>Title: My first entry</strong></p>
-                        <button onclick="document.getElementById('id03').style.display='block'"><strong>View</strong></button>
-                        <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
-                      </div>
-                    </div>
-              
-                    <div class="column">
-                      <div class="card">
-                        <h4>20-08-2018</h4>
-                        <p><strong>Title: Food</strong></p>
-                        <button onclick="document.getElementById('id04').style.display='block'"><strong>View</strong></button>
-                        <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
-                      </div>
-                    </div>
-                    
-                    <div class="column">
-                      <div class="card">
-                        <h4>21-08-2017</h4>
-                        <p><strong>Title: Happy Year!</strong></p>
-                        <button onclick="document.getElementById('id05').style.display='block'"><strong>View</strong></button>
-                        <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
-                      </div>
-                    </div>
-                    
-                    <div class="column">
-                      <div class="card">
-                        <h4>22-08-2017</h4>
-                        <p><strong>Title: Dear Diary...</strong></p>
-                        <button onclick="document.getElementById('id06').style.display='block'"><strong>View</strong></button>
-                        <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
-                      </div>
-                    </div>          
-    </div>
-    
-    <div>
-            <div class="row" id="entries">
-                    <div class="column">
-                      <div class="card">
-                        <h4>23-08-2018</h4>
-                        <p><strong>Title: What a day!</strong></p>
-                        <button onclick="document.getElementById('id07').style.display='block'"><strong>View</strong></button>
-                        <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
-                        
-                      </div>
-                    </div>
-                  
-                    <div class="column">
-                      <div class="card">
-                        <h4>24-08-2018</h4>
-                        <p><strong>Title: Memories...</strong></p>
-                        <button onclick="document.getElementById('id08').style.display='block'"><strong>View</strong></button>
-                        <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
-                      </div>
-                    </div>
-                    
-                    <div class="column">
-                      <div class="card">
-                        <h4>25-08-2017</h4>
-                        <p><strong>Title: The Movie..</strong></p>
-                        <button onclick="document.getElementById('id09').style.display='block'"><strong>View</strong></button>
-                        <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
-                      </div>
-                    </div>
-                           
-                    <div class="column">
-                      <div class="card">
-                        <h4>26-08-2017</h4>
-                        <p><strong>Title:Blue Black</strong></p>
-                        <button onclick="document.getElementById('id02').style.display='block'"><strong>View</strong></button>
-                        <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>  
-                      </div>
-                    </div>          
-                  </div>
-    
-    <!-- The Modal -->
-    <div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'"class="close" title="Close Modal">&times;</span>
-    <!-- Modal Content -->
-    <form class="modal-content animate" action="dashboard.html">
-        <div class="container">
-        <div id="formentries">
-        <label>Date:</label>
-            <input type="date" id="date" required><br>
-        <label>Title:</label>
-            <input type="text" name="titletext" required placeholder ="Title"/><br>
-        <label>Entries:</label>
-        <textarea name="comment" required  placeholder="Enter Text here..."></textarea>
-           <input type="submit" value="Save Entry"/>
-            
-        </div></div>          
-    </form>
-            
+      <div class="row" id="entries">
+        <div class="column">
+          <div class="card">
+            <h4>19-08-2018</h4>
+            <p><strong>Title: My first entry</strong></p>
+            <button onclick="document.getElementById('id03').style.display='block'"><strong>View</strong></button>
+            <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
+          </div>
         </div>
-     </div>
-     <div id="id02" class="Modaltwo">
-        <span onclick="document.getElementById('id02').style.display='none'"class="close" title="Close Modal">&times;</span>   
-        <form class="modal-content animate">
-                <div class="container"> 
-     
-                        <main class = "about1">
-                            <h3 align ="center" id="title">Date:26-08-2018</h3>
-                                <h3 align ="center" id="title">Title: Blue Black</h3>
-                                <p align ="center" id="contents">Dear diary is an online journal where 
-                                   users can pen <br><br> down their thoughts and feelings.
-                                   Everyone can have</p>
-                                     <button><strong><I>Delete Entry</I></strong></button>
-                                   
-                        </main></div>          
-            </form>
-                    
-    </div>
-    <div id="id03" class="Modaltwo">
-        <span onclick="document.getElementById('id03').style.display='none'"class="close" title="Close Modal">&times;</span>   
-        <form class="modal-content animate">
-                <div class="container"> 
-     
-                        <main class = "about1">
-                            <h3 align ="center" id="title">Date:19-08-2018</h3>
-                                <h3 align ="center" id="title">Title: My first entry</h3>
-                                <p align ="center" id="contents">Dear diary is an online journal where 
-                                   users can pen <br><br> down their thoughts and feelings.
-                                   Everyone can have<br></p>
-                                   <div class="modalbuttons">
-                                    
-                                     <button><strong><I>Delete Entry</I></strong></button>
-                                   </div>
-                        </main></div>          
-            </form>
-                    
-    </div>
-    <div id="id04" class="Modaltwo">
-        <span onclick="document.getElementById('id04').style.display='none'"class="close" title="Close Modal">&times;</span>   
-        <form class="modal-content animate">
-                <div class="container"> 
-     
-                        <main class = "about1">
-                            <h3 align ="center" id="title">Date:20-08-2018</h3>
-                                <h3 align ="center" id="title">Title: Food</h3>
-                                <p align ="center" id="contents">Dear diary is an online journal where 
-                                   users can pen <br><br> down their thoughts and feelings.
-                                   Everyone can have<br></p>
-                                   <div class="modalbuttons">
 
-                                     <button><strong><I>Delete Entry</I></strong></button>
-                                   </div>
-                        </main></div>          
-            </form>
-                    
-    </div>
-    <div id="id05" class="Modaltwo">
-        <span onclick="document.getElementById('id05').style.display='none'"class="close" title="Close Modal">&times;</span>   
+        <div class="column">
+          <div class="card">
+            <h4>20-08-2018</h4>
+            <p><strong>Title: Food</strong></p>
+            <button onclick="document.getElementById('id04').style.display='block'"><strong>View</strong></button>
+            <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h4>21-08-2017</h4>
+            <p><strong>Title: Happy Year!</strong></p>
+            <button onclick="document.getElementById('id05').style.display='block'"><strong>View</strong></button>
+            <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h4>22-08-2017</h4>
+            <p><strong>Title: Dear Diary...</strong></p>
+            <button onclick="document.getElementById('id06').style.display='block'"><strong>View</strong></button>
+            <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="row" id="entries">
+          <div class="column">
+            <div class="card">
+              <h4>23-08-2018</h4>
+              <p><strong>Title: What a day!</strong></p>
+              <button onclick="document.getElementById('id07').style.display='block'"><strong>View</strong></button>
+              <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
+
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <h4>24-08-2018</h4>
+              <p><strong>Title: Memories...</strong></p>
+              <button onclick="document.getElementById('id08').style.display='block'"><strong>View</strong></button>
+              <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <h4>25-08-2017</h4>
+              <p><strong>Title: The Movie..</strong></p>
+              <button onclick="document.getElementById('id09').style.display='block'"><strong>View</strong></button>
+              <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <h4>26-08-2017</h4>
+              <p><strong>Title:Blue Black</strong></p>
+              <button onclick="document.getElementById('id02').style.display='block'"><strong>View</strong></button>
+              <button onclick="document.getElementById('id15').style.display='block'"><strong>Modify</strong></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <!-- Modal Content -->
+          <form class="modal-content animate" action="dashboard.html">
+            <div class="container">
+              <div id="formentries">
+                <label>Date:</label>
+                <input type="date" id="date" required><br>
+                <label>Title:</label>
+                <input type="text" name="titletext" required placeholder="Title" /><br>
+                <label>Entries:</label>
+                <textarea name="comment" required placeholder="Enter Text here..."></textarea>
+                <input type="submit" value="Save Entry" />
+
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <div id="id02" class="Modaltwo">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content animate">
-                <div class="container"> 
-     
-                        <main class = "about1">
-                            <h3 align ="center" id="title">Date:21-08-2018</h3>
-                                <h3 align ="center" id="title">Title: Happy Year!</h3>
-                                <p align ="center" id="contents">Dear diary is an online journal where 
-                                   users can pen <br><br> down their thoughts and feelings.
-                                   Everyone can have<br></p>
-                                   <div class="modalbuttons">
-                                     <button><strong><I>Delete Entry</I></strong></button>
-                                   </div>
-                        </main></div>          
-            </form>
-                    
-    </div>
-    <div id="id06" class="Modaltwo">
-        <span onclick="document.getElementById('id06').style.display='none'"class="close" title="Close Modal">&times;</span>   
+          <div class="container">
+
+            <main class="about1">
+              <h3 align="center" id="title">Date:26-08-2018</h3>
+              <h3 align="center" id="title">Title: Blue Black</h3>
+              <p align="center" id="contents">Dear diary is an online journal where
+                users can pen <br><br> down their thoughts and feelings.
+                Everyone can have</p>
+              <button><strong><I>Delete Entry</I></strong></button>
+
+            </main>
+          </div>
+        </form>
+
+      </div>
+      <div id="id03" class="Modaltwo">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content animate">
-                <div class="container"> 
-     
-                        <main class = "about1">
-                            <h3 align ="center" id="title">Date:22-08-2018</h3>
-                                <h3 align ="center" id="title">Title: Dear Diary...</h3>
-                                <p align ="center" id="contents">Dear diary is an online journal where 
-                                   users can pen <br><br> down their thoughts and feelings.
-                                   Everyone can have<br></p>
-                                   <div class="modalbuttons">
-                                     <button><strong><I>Delete Entry</I></strong></button>
-                                   </div>
-                        </main></div>          
-            </form>
-                    
-    </div>
-    <div id="id07" class="Modaltwo">
-        <span onclick="document.getElementById('id07').style.display='none'"class="close" title="Close Modal">&times;</span>   
+          <div class="container">
+
+            <main class="about1">
+              <h3 align="center" id="title">Date:19-08-2018</h3>
+              <h3 align="center" id="title">Title: My first entry</h3>
+              <p align="center" id="contents">Dear diary is an online journal where
+                users can pen <br><br> down their thoughts and feelings.
+                Everyone can have<br></p>
+              <div class="modalbuttons">
+
+                <button><strong><I>Delete Entry</I></strong></button>
+              </div>
+            </main>
+          </div>
+        </form>
+
+      </div>
+      <div id="id04" class="Modaltwo">
+        <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content animate">
-                <div class="container"> 
-     
-                        <main class = "about1">
-                            <h3 align ="center" id="title">Date:23-08-2018</h3>
-                                <h3 align ="center" id="title">Title: What a day!</h3>
-                                <p align ="center" id="contents">Dear diary is an online journal where 
-                                   users can pen <br><br> down their thoughts and feelings.
-                                   Everyone can have<br></p>
-                                   <div class="modalbuttons">
-                                     <button><strong><I>Delete Entry</I></strong></button>
-                                   </div>
-                        </main></div>          
-            </form>
-                    
-    </div>
-    <div id="id08" class="Modaltwo">
-        <span onclick="document.getElementById('id08').style.display='none'"class="close" title="Close Modal">&times;</span>   
+          <div class="container">
+
+            <main class="about1">
+              <h3 align="center" id="title">Date:20-08-2018</h3>
+              <h3 align="center" id="title">Title: Food</h3>
+              <p align="center" id="contents">Dear diary is an online journal where
+                users can pen <br><br> down their thoughts and feelings.
+                Everyone can have<br></p>
+              <div class="modalbuttons">
+
+                <button><strong><I>Delete Entry</I></strong></button>
+              </div>
+            </main>
+          </div>
+        </form>
+
+      </div>
+      <div id="id05" class="Modaltwo">
+        <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content animate">
-                <div class="container"> 
-     
-                        <main class = "about1">
-                            <h3 align ="center" id="title">Date:24-08-2018</h3>
-                                <h3 align ="center" id="title">Title: Memories...</h3>
-                                <p align ="center" id="contents">Dear diary is an online journal where 
-                                   users can pen <br><br> down their thoughts and feelings.
-                                   Everyone can have<br></p>
-                                   <div class="modalbuttons">
-                                     <button><strong><I>Delete Entry</I></strong></button>
-                                   </div>
-                        </main></div>          
-            </form>
-                    
-    </div>
-    <div id="id09" class="Modaltwo">
-        <span onclick="document.getElementById('id09').style.display='none'"class="close" title="Close Modal">&times;</span>   
+          <div class="container">
+
+            <main class="about1">
+              <h3 align="center" id="title">Date:21-08-2018</h3>
+              <h3 align="center" id="title">Title: Happy Year!</h3>
+              <p align="center" id="contents">Dear diary is an online journal where
+                users can pen <br><br> down their thoughts and feelings.
+                Everyone can have<br></p>
+              <div class="modalbuttons">
+                <button><strong><I>Delete Entry</I></strong></button>
+              </div>
+            </main>
+          </div>
+        </form>
+
+      </div>
+      <div id="id06" class="Modaltwo">
+        <span onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content animate">
-                <div class="container"> 
-     
-                        <main class = "about1">
-                            <h3 align ="center" id="title">Date:25-08-2018</h3>
-                                <h3 align ="center" id="title">Title: The Movie..</h3>
-                                <p align ="center" id="contents">Dear diary is an online journal where 
-                                   users can pen <br><br> down their thoughts and feelings.
-                                   Everyone can have<br></p>
-                                   <div class="modalbuttons">
-                                     <button><strong><I>Delete Entry</I></strong></button>
-                                   </div>
-                        </main></div>          
-            </form>
-                    
+          <div class="container">
+
+            <main class="about1">
+              <h3 align="center" id="title">Date:22-08-2018</h3>
+              <h3 align="center" id="title">Title: Dear Diary...</h3>
+              <p align="center" id="contents">Dear diary is an online journal where
+                users can pen <br><br> down their thoughts and feelings.
+                Everyone can have<br></p>
+              <div class="modalbuttons">
+                <button><strong><I>Delete Entry</I></strong></button>
+              </div>
+            </main>
+          </div>
+        </form>
+
+      </div>
+      <div id="id07" class="Modaltwo">
+        <span onclick="document.getElementById('id07').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate">
+          <div class="container">
+
+            <main class="about1">
+              <h3 align="center" id="title">Date:23-08-2018</h3>
+              <h3 align="center" id="title">Title: What a day!</h3>
+              <p align="center" id="contents">Dear diary is an online journal where
+                users can pen <br><br> down their thoughts and feelings.
+                Everyone can have<br></p>
+              <div class="modalbuttons">
+                <button><strong><I>Delete Entry</I></strong></button>
+              </div>
+            </main>
+          </div>
+        </form>
+
+      </div>
+      <div id="id08" class="Modaltwo">
+        <span onclick="document.getElementById('id08').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate">
+          <div class="container">
+
+            <main class="about1">
+              <h3 align="center" id="title">Date:24-08-2018</h3>
+              <h3 align="center" id="title">Title: Memories...</h3>
+              <p align="center" id="contents">Dear diary is an online journal where
+                users can pen <br><br> down their thoughts and feelings.
+                Everyone can have<br></p>
+              <div class="modalbuttons">
+                <button><strong><I>Delete Entry</I></strong></button>
+              </div>
+            </main>
+          </div>
+        </form>
+
+      </div>
+      <div id="id09" class="Modaltwo">
+        <span onclick="document.getElementById('id09').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate">
+          <div class="container">
+
+            <main class="about1">
+              <h3 align="center" id="title">Date:25-08-2018</h3>
+              <h3 align="center" id="title">Title: The Movie..</h3>
+              <p align="center" id="contents">Dear diary is an online journal where
+                users can pen <br><br> down their thoughts and feelings.
+                Everyone can have<br></p>
+              <div class="modalbuttons">
+                <button><strong><I>Delete Entry</I></strong></button>
+              </div>
+            </main>
+          </div>
+        </form>
+
+      </div>
+
     </div>
-    
-</div>          
-</div>
-   <div id="Reminders" class="tabcontent">
-  
-     
-     <table id="all-reminders">
-      <tr><div id="make-reminder">
-        <a href="reminder.html"><input type="submit" value="Add Reminder"/></a>
-    </div>
-          <th></th>
-          <th>DATE</th>
-          <th>TITLE</th>
-          <th>ACTION</th>
+  </div>
+  <div id="Reminders" class="tabcontent">
+
+
+    <table id="all-reminders">
+      <tr>
+        <div id="make-reminder">
+          <a href="reminder.html"><input type="submit" value="Add Reminder" /></a>
+        </div>
+        <th></th>
+        <th>DATE</th>
+        <th>TITLE</th>
+        <th>ACTION</th>
       </tr>
       <tr>
-          <td>1</td>
-          <td><b>19-08-2018</b></td>
-          <td><b>Baby Shower</b></td>
-          <td><button id="readmore" onclick="document.getElementById('id11').style.display='block'"><b>Read More</b></button>
-            <a href="#"><button id="snooze"><b>Snooze</b></button></a>
-          <a href="#"><button id="delete"><b>Delete</b></button></a></td></td>
+        <td>1</td>
+        <td><b>19-08-2018</b></td>
+        <td><b>Baby Shower</b></td>
+        <td><button id="readmore" onclick="document.getElementById('id11').style.display='block'"><b>Read More</b></button>
+          <a href="#"><button id="snooze"><b>Snooze</b></button></a>
+          <a href="#"><button id="delete"><b>Delete</b></button></a></td>
+        </td>
       </tr>
-       <tr>
-          <td>2</td>
-          <td><b>23-08-2018</b></td>
-          <td><b>Team Meeting</b></td>
-          <td><button id="readmore" onclick="document.getElementById('id12').style.display='block'"><b>Read More</b></button>
-            <a href="#"><button id="snooze"><b>Snooze</b></button></a>
-            <a href="#"><button id="delete"><b>Delete</b></button></a></td></td>
+      <tr>
+        <td>2</td>
+        <td><b>23-08-2018</b></td>
+        <td><b>Team Meeting</b></td>
+        <td><button id="readmore" onclick="document.getElementById('id12').style.display='block'"><b>Read More</b></button>
+          <a href="#"><button id="snooze"><b>Snooze</b></button></a>
+          <a href="#"><button id="delete"><b>Delete</b></button></a></td>
+        </td>
       </tr>
-       <tr>
-          <td>3</td>
-          <td><b>25-08-2018</b></td>
-          <td><b>Coursework dd</b></td>
-          <td><button id="readmore" onclick="document.getElementById('id13').style.display='block'"><b>Read More</b></button>
-            <a href="#"><button id="snooze"><b>Snooze</b></button></a>
-            <a href="#"><button id="delete"><b>Delete</b></button></a></td></td>
+      <tr>
+        <td>3</td>
+        <td><b>25-08-2018</b></td>
+        <td><b>Coursework dd</b></td>
+        <td><button id="readmore" onclick="document.getElementById('id13').style.display='block'"><b>Read More</b></button>
+          <a href="#"><button id="snooze"><b>Snooze</b></button></a>
+          <a href="#"><button id="delete"><b>Delete</b></button></a></td>
+        </td>
       </tr>
-       <tr>
-          <td>4</td>
-          <td><b>25-08-2018</b></td>
-          <td><b>Church</b></td>
-          <td><button id="readmore" onclick="document.getElementById('id14').style.display='block'"><b>Read More</b></button>
-            <a href="#"><button id="snooze"><b>Snooze</b></button></a>
-            <a href="#"><button id="delete"><b>Delete</b></button></a></td></td>
+      <tr>
+        <td>4</td>
+        <td><b>25-08-2018</b></td>
+        <td><b>Church</b></td>
+        <td><button id="readmore" onclick="document.getElementById('id14').style.display='block'"><b>Read More</b></button>
+          <a href="#"><button id="snooze"><b>Snooze</b></button></a>
+          <a href="#"><button id="delete"><b>Delete</b></button></a></td>
+        </td>
       </tr>
-      
 
-  </table>
 
-   </div>
-   <div id="id11" class="Modalthree">
-    <span onclick="document.getElementById('id11').style.display='none'"class="close" title="Close Modal">&times;</span>   
+    </table>
+
+  </div>
+  <div id="id11" class="Modalthree">
+    <span onclick="document.getElementById('id11').style.display='none'" class="close" title="Close Modal">&times;</span>
     <form class="modal-content animate">
-            <div class="container"> 
-                    <main class = "about1">
-                        <h3 align ="center" id="title">Date:19-08-2018</h3>
-                            <h3 align ="center" id="title">Baby Shower </h3>
-                            <p align ="center" id="contents">Ronah's Baby shower at her home near Kampala <br></p>
-                              
-                    </main></div>          
-        </form>
-                
-</div>
-<div id="id12" class="Modalthree">
-  <span onclick="document.getElementById('id12').style.display='none'"class="close" title="Close Modal">&times;</span>   
-  <form class="modal-content animate">
-          <div class="container"> 
-                  <main class = "about1">
-                      <h3 align ="center" id="title">Date:23-08-2018</h3>
-                          <h3 align ="center" id="title">Team Meeting </h3>
-                          <p align ="center" id="contents">Meeting the team at Entebbe <br></p>
-                            
-                  </main></div>          
-      </form>
-              
-</div>
-<div id="id13" class="Modalthree">
-  <span onclick="document.getElementById('id13').style.display='none'"class="close" title="Close Modal">&times;</span>   
-  <form class="modal-content animate">
-          <div class="container"> 
-                  <main class = "about1">
-                      <h3 align ="center" id="title">Date:25-08-2018</h3>
-                          <h3 align ="center" id="title">Coursework dd </h3>
-                          <p align ="center" id="contents">Submission of the modelling and simulation project <br></p>
-                            
-                  </main></div>          
-      </form>
-              
-</div>
-<div id="id14" class="Modalthree">
-  <span onclick="document.getElementById('id14').style.display='none'"class="close" title="Close Modal">&times;</span>   
-  <form class="modal-content animate">
-          <div class="container"> 
-                  <main class = "about1">
-                      <h3 align ="center" id="title">Date:25-08-2018</h3>
-                          <h3 align ="center" id="title">Church </h3>
-                          <p align ="center" id="contents">Attending church until midday <br></p>
-                            
-                  </main></div>          
-      </form>
-              
-</div>
+      <div class="container">
+        <main class="about1">
+          <h3 align="center" id="title">Date:19-08-2018</h3>
+          <h3 align="center" id="title">Baby Shower </h3>
+          <p align="center" id="contents">Ronah's Baby shower at her home near Kampala <br></p>
+
+        </main>
+      </div>
+    </form>
+
+  </div>
+  <div id="id12" class="Modalthree">
+    <span onclick="document.getElementById('id12').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content animate">
+      <div class="container">
+        <main class="about1">
+          <h3 align="center" id="title">Date:23-08-2018</h3>
+          <h3 align="center" id="title">Team Meeting </h3>
+          <p align="center" id="contents">Meeting the team at Entebbe <br></p>
+
+        </main>
+      </div>
+    </form>
+
+  </div>
+  <div id="id13" class="Modalthree">
+    <span onclick="document.getElementById('id13').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content animate">
+      <div class="container">
+        <main class="about1">
+          <h3 align="center" id="title">Date:25-08-2018</h3>
+          <h3 align="center" id="title">Coursework dd </h3>
+          <p align="center" id="contents">Submission of the modelling and simulation project <br></p>
+
+        </main>
+      </div>
+    </form>
+
+  </div>
+  <div id="id14" class="Modalthree">
+    <span onclick="document.getElementById('id14').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content animate">
+      <div class="container">
+        <main class="about1">
+          <h3 align="center" id="title">Date:25-08-2018</h3>
+          <h3 align="center" id="title">Church </h3>
+          <p align="center" id="contents">Attending church until midday <br></p>
+
+        </main>
+      </div>
+    </form>
+
+  </div>
 
   <div id="id15" class="Modalfour">
-      <span onclick="document.getElementById('id15').style.display='none'"class="close" title="Close Modal">&times;</span>   
-      <form class="modal-content animate">
-              <div class="container"> 
-   
-                      <main class = "about1">
-                          <div id="modifyentries">
-                              <label>Date:</label>
-                                  <input type="date" id="date" required value="2018-08-26"><br>
-                              <label>Title:</label>
-                                  <input type="text" name="titletext" placeholder="Blue Black"/><br>
-                              <label>Entries:</label>
-                              <textarea name="comment">Dear diary is an online journal where users can pen down their thoughts and feelings. Everyone can have
+    <span onclick="document.getElementById('id15').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content animate">
+      <div class="container">
+
+        <main class="about1">
+          <div id="modifyentries">
+            <label>Date:</label>
+            <input type="date" id="date" required value="2018-08-26"><br>
+            <label>Title:</label>
+            <input type="text" name="titletext" placeholder="Blue Black" /><br>
+            <label>Entries:</label>
+            <textarea name="comment">Dear diary is an online journal where users can pen down their thoughts and feelings. Everyone can have
                               </textarea>
-                                  <button id="modifyentry">Modify</button> 
-                              </div> 
-                      </main></div>          
-          </form>
-                  
+            <button id="modifyentry">Modify</button>
+          </div>
+        </main>
+      </div>
+    </form>
+
   </div>
 </body>
+
 </html>
