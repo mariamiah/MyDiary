@@ -695,7 +695,18 @@ form h4{
         width: 70%;
         margin-left: 14%;
     }
-
+    .dashboard-content{
+        width:100%;
+        text-align:center;
+    }
+    .dashboard-content img{
+        width:45%;
+        margin-left:10%;
+    }
+    .tabcontent #profile{
+        width:0%;
+      
+    }
 }
 
 /* Add responsiveness for larger devices */
