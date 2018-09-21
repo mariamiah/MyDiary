@@ -27,6 +27,10 @@ git clone https://github.com/mariamiah/MyDiary.git
 ```
 Open the repo folder within your code editor forexample vscode
 
+## Github Pages
+### LINK TO  on Github Pages
+### [MyDiary](https://mariamiah.github.io/MyDiary/)
+
 ## Authors
 
 * **Maria Nanfuka** 
